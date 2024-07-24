@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+input[type="file"] {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+input[type="text"] {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+pre {
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2,
+p,
+li {
+  color: white;
+}
