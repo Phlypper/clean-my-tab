@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+clean-my-tab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an app designed to help users format their guitar tablature for use with the “Guitar Eyes” app.
+It allows users to upload guitar tablature via .txt file and it will remove most unwanted text that may be in the file that would cause issues with the parsing of the tablature. Once the file is uploaded, the app will “Clean” the original file and produce a new .txt file that is formatted for use with the Guitar Eyes app and gives the user the ability to rename the file to whatever they wish and it will be downloaded to their downloads file on their computer. There are a few things this app will not do; if the tablature in the original text file does not have single letters, followed by a vertical line, before each tablature line, the app will not recognize them as part of the tablature. So, the user will have to type those characters in before uploading the file to this app. The other issue is, if there is any text inserted into the actual tablature lines, themselves (I.e. playing instructions, etc.), the app will not be able to remove that text. So, the user will have to remove those words or characters either before uploading the file to this app or before uploading the “Cleaned tablature” file to Guitar Eyes.
 
-## Available Scripts
+ Below are instructions on how to set up and run the application locally.
 
-In the project directory, you can run:
+ Table of Contents
 
-### `npm start`
+- [Installation]
+- [Running the App]
+- [Building for Production]
+- [Contributing]
+##Before installation, create a new folder and open it in your desired code editor
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Phlypper/clean-my-tab.git
+   cd clean-my-tab
 
-### `npm test`
+2. Install dependencies:
+   ```bash
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install browserify-zlib
+npm install util
+Npm install mammoth
 
-### `npm run build`
+## Running the App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start the development server, run:
+```bash
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application will be available at `http://localhost:3000/`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Building for Production
 
-### `npm run eject`
+To create a production build, run:
+```bash
+npm run build
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The production-ready files will be in the `build` directory.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Contributions are welcome! Please submit a pull request or open an issue if you have any suggestions or find any bugs.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+***This app was created with the help of multiple A.I. GPTs***
