@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clean-my-tab/static/css/main.e5bc3c0b.css",
+    "main.js": "/clean-my-tab/static/js/main.ac79d92e.js",
+    "static/js/453.2319d528.chunk.js": "/clean-my-tab/static/js/453.2319d528.chunk.js",
+    "index.html": "/clean-my-tab/index.html",
+    "main.e5bc3c0b.css.map": "/clean-my-tab/static/css/main.e5bc3c0b.css.map",
+    "main.ac79d92e.js.map": "/clean-my-tab/static/js/main.ac79d92e.js.map",
+    "453.2319d528.chunk.js.map": "/clean-my-tab/static/js/453.2319d528.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5bc3c0b.css",
+    "static/js/main.ac79d92e.js"
+  ]
+}
